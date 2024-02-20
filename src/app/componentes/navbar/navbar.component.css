@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap');
+
+
+/* FUENTES */
+
+h1{
+  font-family: "Gluten", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  font-size: 40pt;
+  margin-left: 20px;
+}
+
+h6{
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15pt;
+  color: white
+}
+
+h6:hover{
+  cursor: url(), pointer;
+}
+
+/* ESTRUCTURA WEB*/
+
+.navegador{
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+}
+
+.firmaname{
+  display: flex;
+}
+
+.punto{
+  color: orange;
+}
+
+.firma{
+  display: none;
+}
+
+
+/* ESTRUCTURA NOTEBOOK / TABLET */
+
+@media (max-width: 992px){
+  .offcanvas-body{
+    margin-right: 100px;
+  }
+}
+
+/* ESTRUCTURA MOBILE */
+.navbar-toggler{
+  background-color: #ecc193;
+}
+
+.offcanvas{
+  background-color: #ecc193;
+}
+
+@media (max-width: 768px) {
+
+  .firmaname{
+    margin-top: 20px;
+  }
+
+  .firmaname2{
+    display: flex;
+  }
+
+  .firma{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p{
+    font-family: 'Dosis', sans-serif;
+    font-size: 15pt;
+  }
+}

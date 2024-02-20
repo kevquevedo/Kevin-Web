@@ -1,0 +1,143 @@
+@keyframes jello-horizontal{0%{transform:scale3d(1,1,1)}30%{transform:scale3d(1.25,.75,1)}40%{transform:scale3d(.75,1.25,1)}50%{transform:scale3d(1.15,.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}100%{transform:scale3d(1,1,1)}}
+@keyframes text-pop-up-top{0%{transform:translateY(0);transform-origin:50% 50%;text-shadow:none}100%{transform:translateY(-50px);transform-origin:50% 50%;text-shadow:0 1px 0 #ccc,0 2px 0 #ccc,0 3px 0 #ccc,0 4px 0 #ccc,0 5px 0 #ccc,0 6px 0 #ccc,0 7px 0 #ccc,0 8px 0 #ccc,0 9px 0 #ccc,0 50px 30px rgba(0,0,0,.3)}}
+@keyframes swirl-in-fwd{0%{transform:rotate(-540deg) scale(0);opacity:0}100%{transform:rotate(0) scale(1);opacity:1}}
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat+Alternates:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Alfa+Slab+One&family=Anta&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Rubik+Marker+Hatch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Alfa+Slab+One&family=Anta&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Rubik+Marker+Hatch&display=swap');
+
+/* FUENTES */
+/* FUENTES DEL COMPONENTE */
+
+h2{
+  margin-top: 30vh;
+  font-size: 60pt;
+  font-family: 'Dosis', sans-serif;
+  color: black;
+  text-shadow: 2px 2px 10px rgba(255,255,255,1);
+  margin-left: 10px;
+}
+
+h3{
+  color: black;
+  font-family: "Anta", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20pt;
+}
+
+p{ width: 70%; height: 100%; border-bottom-right-radius: 100px; border-top-right-radius: 100px; font-family: 'Dosis', sans-serif; font-size: 20pt;}
+
+h1:hover{ animation:text-pop-up-top .5s cubic-bezier(.25,.46,.45,.94) both }
+
+
+
+img{ width: 50%; height: 45%; filter: drop-shadow(0px 8px 4px rgba(255,255,255,1)); z-index: -10px; }
+img:hover{ animation:jello-horizontal .9s both }
+
+
+/* PRINCIPAL / FONDO DE HABILIDADES Y TECNOLOGIAS */
+
+.principal{
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  width: 100%;
+  background-color: #ecc193;
+}
+
+.titulo{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.lh{
+  margin-top: 20px;
+}
+
+.lh:hover{
+  animation:swirl-in-fwd 1s ease-out both
+}
+
+.detalle-habilidad{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 100px;
+  width: 80%;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.cuadro-habilidad{
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+
+  margin-top: 10vh;
+  padding: 50px;
+
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+
+  color: white;
+
+}
+
+.titulo-habilidad{
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* DIMENSIONES PARA CELULARES */
+
+@media (max-width: 768px){
+
+  h2{
+    font-size: 30pt;
+  }
+
+  p{
+    font-size: 10pt;
+    text-align: center;
+  }
+
+  .detalle-habilidad{
+    margin-left: 20px;
+    border: 2px solid black;
+  }
+
+  .cuadro-habilidad{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .titulo-habilidad{
+    width: 100%;
+    border: 1px solid blueviolet;
+  }
+
+  h3{
+    font-size: 12pt;
+    margin-top: 20px;
+  }
+}
+
+

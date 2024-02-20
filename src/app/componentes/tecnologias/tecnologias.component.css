@@ -1,0 +1,15 @@
+
+.cuadricula{
+  width: 80%;
+  margin-top: 10vh;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+}
+
+.cuadro{
+  height: 200px;
+  margin: 40px;
+}

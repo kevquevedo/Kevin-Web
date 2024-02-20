@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500;700;800&display=swap');
+
+p{
+  font-family: 'Dosis', sans-serif;
+  font-size: 20pt;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+}
+
+.contenedor{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  height: 60vh;
+
+  background-image: url(../../../assets/layered-peaks-haikei.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -180%;
+
+}
+
+.imgs{
+  width: 100px;
+  margin: 40px;
+}
+
+
+@media (max-width: 768px) {
+
+  p{
+    font-size: 15pt;
+  }
+  .contenedor{
+    border-radius: 10px;
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .imgs{
+    width: 30px;
+  }
+
+}

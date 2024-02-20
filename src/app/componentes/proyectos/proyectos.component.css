@@ -1,0 +1,214 @@
+@keyframes shake-vertical{ 0%,100%{transform:translateY(0)} 10%,30%,50%,70%{transform:translateY(-32px)} 20%,40%,60%{transform:translateY(32px)} 80%{transform:translateY(18px)} 90%{transform:translateY(-18px)}}
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat+Alternates:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Alfa+Slab+One&family=Anta&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Rubik+Marker+Hatch&display=swap');
+
+
+/* FUENTES*/
+h1{
+  font-family: 'Dosis', sans-serif;
+  font-size: 60pt;
+  color: #452212;
+  text-shadow: 2px 2px 10px rgba(255,255,255,1);
+  margin-left: 10px;
+}
+
+h1:hover{
+  animation:shake-vertical 2s cubic-bezier(.455,.03,.515,.955) both
+}
+
+h4{
+  font-family: 'Dosis', sans-serif;
+}
+
+p{
+  width: 90%;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15pt;
+}
+
+img{
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ESTRUCTURA WEB */
+.principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-image: url(../../../assets/fondo-proy.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.titulo{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10vh;
+}
+
+.tecnologias{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tecno-proyecto{
+  width: 5%;
+  margin-left: 10px;
+  border-radius: 20%;
+}
+
+.botones{
+  margin-top: 20px;
+}
+
+/* PRIMER PROYECTO */
+
+.proyecto-1,
+.proyecto-2,
+.proyecto-3{
+  display: flex;
+  margin: 8%;
+  padding: 3%;
+
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.img-proyecto-1,
+.img-proyecto-2,
+.img-proyecto-3{
+  width: 25%;
+  border-radius: 40px;
+}
+
+.texto-proyecto-1,
+.texto-proyecto-2,
+.texto-proyecto-3{
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* BOTONES DE LOS PROYECTOS */
+
+.boton-abrir-proyecto{
+  width: 8%;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.boton-abrir-proyecto:hover{
+  transition: all 0.5s;
+  border: 6px solid red;
+}
+
+.boton-abrir-web{
+  width: 8%;
+  padding: 5px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.boton-abrir-web:hover{
+  transition: all 0.5s;
+  border: 6px solid red;
+}
+
+
+
+/* ESTRUCTURA MOBILE */
+@media (max-width: 768px){
+
+  .principal {
+    background-image: url(../../../assets/fondo-proy2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .titulo{
+    margin-top: 0;
+  }
+
+  h1{
+    margin-top: 10vh;
+    font-size: 30pt;
+  }
+
+  p{
+    font-size: 10pt;
+  }
+
+  .proyecto-1,
+  .proyecto-2,
+  .proyecto-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .proyecto-2{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .img-proyecto-1,
+  .img-proyecto-2,
+  .img-proyecto-3{
+    width: 50%;
+    border-radius: 40px;
+  }
+
+  .texto-proyecto-1,
+  .texto-proyecto-2,
+  .texto-proyecto-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .tecnologias{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .tecno-proyecto{
+    width: 10%;
+    margin-left: 10px;
+    border-radius: 20%;
+  }
+
+  .botones{
+    margin-top: 30px;
+    margin-left: 10px;
+    display: flex;
+  }
+
+  .boton-abrir-proyecto{
+    width: 15%;
+  }
+
+  .boton-abrir-web{
+    width: 15%;
+    margin-left: 20px;
+  }
+
+}

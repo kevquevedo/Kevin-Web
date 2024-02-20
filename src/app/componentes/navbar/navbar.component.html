@@ -1,0 +1,73 @@
+<nav class="navbar navbar-expand-md navegador" data-bs-theme="dark" id="navegador">
+  <div class="container-fluid">
+
+    <!-- SECCION LOGO -->
+    <div class="firmaname">
+      <h1 class="text-dark">Kevin</h1><h1 class="punto">.</h1>
+    </div>
+
+    <!-- SECCION HAMBURGUESA + OFF CANVAS-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#MenuNavbar" aria-controls="MenuNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="MenuNavbar" aria-labelledby="MenuNavbarLabel">
+
+      <div class="offcanvas-header" data-bs-theme="dark">
+        <button type="button" class="btn-close"  data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <div class="px-2">
+              <a class="nav-link active" (click)="irInicio()">
+                <h6>Inicio</h6>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="px-2 border-white">
+              <a class="nav-link active" (click)="irProyectos()">
+                <h6>Proyectos</h6>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="px-2 border-white">
+              <a class="nav-link active" (click)="irHabilidades()">
+                <h6>Habilidades</h6>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="px-2 border-white">
+              <a class="nav-link active" (click)="irSobremi()">
+                <h6>Sobre mí</h6>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="px-2 border-white">
+              <a class="nav-link active" (click)="irContacto()">
+                <h6>Contacto</h6>
+              </a>
+            </div>
+          </li>
+        </ul>
+
+
+
+      </div>
+
+      <div class="firma">
+        <div class="firmaname2">
+          <h1 class="text-dark">Kevin</h1><h1 class="punto">.</h1>
+        </div>
+        <p class="text-center text-dark">© 2024 - kevdev</p>
+      </div>
+
+
+    </div>
+  </div>
+</nav>
