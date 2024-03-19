@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import 'ldrs/helix'
+
+// Default values shown
+
 
 @Component({
   selector: 'app-presentacion',

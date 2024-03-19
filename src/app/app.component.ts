@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 declare var AOS: any;
+import { ring } from 'ldrs'
 
 @Component({
   selector: 'app-root',
@@ -12,5 +13,9 @@ export class AppComponent {
     window.onload = () => {
       AOS.init();
     }
+
+
+      ring.register('my-precious')
+
   }
 }

@@ -12,6 +12,13 @@ import { HabilidadesComponent } from './componentes/habilidades/habilidades.comp
 import { PresentacionComponent } from './componentes/presentacion/presentacion.component';
 import { TecnologiasComponent } from './componentes/tecnologias/tecnologias.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { helix } from 'ldrs'
+
+helix.register();
 
 @NgModule({
   declarations: [
@@ -28,9 +35,15 @@ import { ContactoComponent } from './componentes/contacto/contacto.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+ }

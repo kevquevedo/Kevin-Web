@@ -38,6 +38,13 @@
 }
 
 
+
+.bandera-idioma-seleccionada{
+  width: 25%;
+}
+
+
+
 @media (max-width: 768px) {
   main{
     margin-left: 10px;
@@ -57,4 +64,12 @@
     text-align: center;
   }
 }
+
+
+
+
+
+
+
+
 

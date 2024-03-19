@@ -1,49 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* FUENTES */
 
 h1{
-  font-family: "Gluten", cursive;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-variation-settings: "slnt" 0;
   font-size: 40pt;
   margin-left: 20px;
+  font-family: "Yellowtail", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  filter: drop-shadow(0px 4px 10px white);
 }
 
 h6{
-  font-family: "Anta", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-style: normal;
-  font-size: 15pt;
-  color: white
+  font-style: italic;
+  font-size: 13pt;
+  color: black;
+  text-align: center;
 }
 
 h6:hover{
-  cursor: url(), pointer;
+  transition: all 0.3s;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+  cursor: pointer;
 }
+
+img{
+  width: 25%;
+
+}
+
 
 /* ESTRUCTURA WEB*/
 
 .navegador{
-  width: 100%;
-  height: 10vh;
-  background-color: black;
+  width: 90%;
+  height: 15vh;
+  position: absolute;
+  background-color: transparent;
+  right: 10%;
+  left: 10%;
 }
 
 .firmaname{
   display: flex;
 }
 
-.punto{
-  color: orange;
-}
-
 .firma{
   display: none;
+}
+
+.bandera{
+  width: 10%;
+}
+
+.boton-principal{
+  width: 150px;
 }
 
 
@@ -56,15 +74,34 @@ h6:hover{
 }
 
 /* ESTRUCTURA MOBILE */
-.navbar-toggler{
-  background-color: #ecc193;
-}
 
 .offcanvas{
-  background-color: #ecc193;
+  background-color: #2a8c4a;
+  /* background-image: url(../../../assets/fondos/mundo-canvas.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom; */
 }
 
 @media (max-width: 768px) {
+
+  .navegador{
+    width: 100%;
+    background-color: transparent;
+    left: 0;
+  }
+
+  .container-fluid{
+    display: flex;
+    justify-content: end;
+  }
+
+  .navbar-toggler{
+    border: 2px solid black;
+  }
+
+
+
 
   .firmaname{
     margin-top: 20px;

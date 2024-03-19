@@ -1,17 +1,12 @@
-<nav class="navbar navbar-expand-md navegador" data-bs-theme="dark" id="navegador">
+<nav class="navbar navbar-expand-md navegador"  id="navegador">
   <div class="container-fluid">
 
-    <!-- SECCION LOGO -->
-    <div class="firmaname">
-      <h1 class="text-dark">Kevin</h1><h1 class="punto">.</h1>
-    </div>
-
     <!-- SECCION HAMBURGUESA + OFF CANVAS-->
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#MenuNavbar" aria-controls="MenuNavbar" aria-label="Toggle navigation">
+    <button class="navbar-toggler"  type="button" data-bs-toggle="offcanvas" data-bs-target="#MenuNavbar" aria-controls="MenuNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="MenuNavbar" aria-labelledby="MenuNavbarLabel">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="MenuNavbar" aria-labelledby="MenuNavbarLabel" >
 
       <div class="offcanvas-header" data-bs-theme="dark">
         <button type="button" class="btn-close"  data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -19,55 +14,70 @@
 
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+          <!-- SECCION LOGO -->
+          <div class="firmaname"></div>
+
           <li class="nav-item">
-            <div class="px-2">
-              <a class="nav-link active" (click)="irInicio()">
-                <h6>Inicio</h6>
-              </a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <div class="px-2 border-white">
-              <a class="nav-link active" (click)="irProyectos()">
-                <h6>Proyectos</h6>
-              </a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <div class="px-2 border-white">
-              <a class="nav-link active" (click)="irHabilidades()">
-                <h6>Habilidades</h6>
-              </a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <div class="px-2 border-white">
-              <a class="nav-link active" (click)="irSobremi()">
-                <h6>Sobre mí</h6>
-              </a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <div class="px-2 border-white">
-              <a class="nav-link active" (click)="irContacto()">
-                <h6>Contacto</h6>
-              </a>
+            <div class="dropdown end-0 mb-3 me-3 bd-mode-toggle">
+              <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center boton-principal  text-dark"
+                      id="bd-theme"
+                      type="button"
+                      aria-expanded="false"
+                      data-bs-toggle="dropdown"
+                      aria-label="Toggle theme (auto)">
+                      <img src="{{idiomaBandera}}" alt="" class="bi me-2 bandera-idioma-seleccionada">
+                     {{idioma}}
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+                <li>
+                  <button type="button"
+                          class="dropdown-item d-flex align-items-center"
+                          data-bs-theme-value="light"
+                          aria-pressed="false"
+                          (click)="cambiarEspanol()">
+                    <img src="../../../assets/banderas/espana.svg" alt="" class="bi me-2 bandera-idioma">
+                    Español
+                  </button>
+                </li>
+                <li>
+                  <button type="button"
+                          class="dropdown-item d-flex align-items-center"
+                          data-bs-theme-value="dark"
+                          aria-pressed="false"
+                          (click)="cambiarIngles()">
+                    <img src="../../../assets/banderas/inglaterra.svg" alt="" class="bi me-2 bandera-idioma">
+                    Inglés
+                  </button>
+                </li>
+                <li>
+                  <button type="button"
+                          class="dropdown-item d-flex align-items-center"
+                          data-bs-theme-value="auto"
+                          aria-pressed="true"
+                          (click)="cambiarPortugues()">
+                    <img src="../../../assets/banderas/portugal.svg" alt="" class="bi me-2 bandera-idioma">
+                    Portugués
+                  </button>
+                </li>
+              </ul>
             </div>
           </li>
         </ul>
-
 
 
       </div>
 
       <div class="firma">
         <div class="firmaname2">
-          <h1 class="text-dark">Kevin</h1><h1 class="punto">.</h1>
+          <h1>KQ</h1><h1 class="punto">.</h1>
         </div>
-        <p class="text-center text-dark">© 2024 - kevdev</p>
+        <p class="text-center">© 2024</p>
       </div>
 
 
     </div>
   </div>
+
+
 </nav>

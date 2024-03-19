@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
+import { ring } from 'ldrs'
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,12 @@ import * as AOS from 'aos';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+ estilo! : string;
+
+  constructor() {
+    ring.register('my-precious')
+    this.cambiarColor();
+  }
 
   ngOnInit(): void {
     AOS.init({
@@ -16,5 +22,19 @@ export class HomeComponent implements OnInit {
     });
     AOS.refresh();
   }
+
+  cambiarMinimalista(){
+    this.estilo = "Minimalista"
+  }
+
+  cambiarColor(){
+    this.estilo = "Colors"
+  }
+
+
+  cambiar3erEstilo(){
+    this.estilo = "3erEstilo"
+  }
+
 
 }
